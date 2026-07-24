@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { LegalPage } from "@/components/PageShell";
 
 export const Route = createFileRoute("/terms")({
@@ -35,7 +35,7 @@ function TermsPage() {
         Crimson Music is primarily an offline local player. We do not upload your personal music files
         to our servers; your music remains on your device. We only access your device storage to
         organize and play your files as requested by you. See our{" "}
-        <a href="/privacy">Privacy Policy</a> for full details on what limited data we do process.
+        <Link to="/privacy">Privacy Policy</Link> for full details on what limited data we do process.
       </p>
 
       <h2>3. License to Use</h2>
@@ -86,7 +86,7 @@ function TermsPage() {
       <h2>8. Third-Party Services</h2>
       <p>
         The Service may interoperate with third-party services, including advertising SDKs described
-        in our <a href="/privacy">Privacy Policy</a>. Your use of any linked third-party service is
+        in our <Link to="/privacy">Privacy Policy</Link>. Your use of any linked third-party service is
         governed by that service's own terms and privacy policy. We are not responsible for
         third-party services.
       </p>

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { LegalPage } from "@/components/PageShell";
 
 export const Route = createFileRoute("/cookies")({
@@ -20,7 +20,7 @@ function CookiesPage() {
       <p>
         This Cookie Policy explains how Crimson Music uses cookies and similar technologies on this
         website. It complements our{" "}
-        <a href="/privacy">Privacy Policy</a>. By continuing to use this website you can adjust your
+        <Link to="/privacy">Privacy Policy</Link>. By continuing to use this website you can adjust your
         preferences at any time by clicking{" "}
         <button onClick={openPrefs} className="underline text-primary">Cookie Preferences</button>.
       </p>

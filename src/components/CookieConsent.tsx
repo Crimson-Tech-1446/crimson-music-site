@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { getConsent, saveConsent, type ConsentCategories } from "@/lib/consent";
 import { Cookie, Shield, BarChart3, Megaphone, X } from "lucide-react";
 
@@ -62,7 +63,7 @@ export function CookieConsent() {
                   Crimson Music uses cookies to keep the site secure and, with your permission,
                   to understand how it's used. No analytics or marketing cookies are set until you
                   choose. Read our{" "}
-                  <a href="/cookies" className="text-primary hover:underline">Cookie Policy</a>.
+                  <Link to="/cookies" className="text-primary hover:underline">Cookie Policy</Link>.
                 </p>
                 <div className="mt-5 flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <button
