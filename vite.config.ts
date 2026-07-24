@@ -7,14 +7,15 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  // Prerendering spins up a local Vite preview server to crawl/render pages; force IPv4 loopback
-  // since some environments (CI runners, sandboxes) don't support binding IPv6 "::".
+  // Served from https://crimson-tech-1446.github.io/crimson-music-site/ (a subpath, not a custom
+  // domain), so every asset/link needs to be prefixed with the repo name or they 404.
   vite: {
+    base: "/crimson-music-site/",
     preview: { host: "127.0.0.1" },
   },
-  // Static export for GitHub Pages (custom domain, served from site root — no base path needed).
-  // Nitro is fully disabled: no Cloudflare Worker, no server runtime, no server.ts/start.ts entry.
-  // TanStack Start prerenders every route to plain HTML at build time instead.
+  // Static export for GitHub Pages. Nitro is fully disabled: no Cloudflare Worker, no server
+  // runtime, no server.ts/start.ts entry. TanStack Start prerenders every route to plain HTML
+  // at build time instead.
   nitro: false,
   tanstackStart: {
     prerender: {
