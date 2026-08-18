@@ -62,15 +62,19 @@ function PrivacyPage() {
 
       <h2>4. Third-Party Services</h2>
       <p>
-        We use <strong>Appodeal</strong> to support our service through advertisements.
+        We use <strong>Appodeal</strong> and <strong>Google AdMob</strong> to support our service through advertisements.
       </p>
       <ul>
-        <li>While we do not collect personal data, Appodeal and its partners may collect data (like advertising IDs) to provide relevant ads, subject to your consent.</li>
+        <li>While we do not collect personal data, Appodeal, AdMob, and their partners may collect data (like advertising IDs) to provide relevant ads, subject to your consent.</li>
         <li>You can manage your ad preferences or opt-out of personalized ads within your device's Google settings.</li>
         <li>
           Please refer to the{" "}
           <a href="https://appodeal.com/privacy-policy" target="_blank" rel="noopener noreferrer">
             Appodeal Privacy Policy
+          </a>{" "}
+          and the{" "}
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            Google Privacy Policy
           </a>{" "}
           for more details.
         </li>
