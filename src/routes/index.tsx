@@ -70,6 +70,19 @@ function Home() {
         </div>
       </section>
 
+      {/* Purpose */}
+      <section className="mx-auto max-w-4xl px-4 py-16 text-center">
+        <div className="text-xs uppercase tracking-widest text-primary font-semibold">Why Crimson Music</div>
+        <h2 className="mt-2 text-4xl font-bold tracking-tight">
+          A music player built to play your music, nothing else.
+        </h2>
+        <p className="mt-4 mx-auto max-w-2xl text-muted-foreground leading-relaxed">
+          Crimson Music exists to give you a fast, high-fidelity way to listen to the music you own or
+          stream, without turning your listening habits into a product. Play, organize, and enjoy your
+          library online or offline, with no account required and no data sold behind your back.
+        </p>
+      </section>
+
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="text-center max-w-2xl mx-auto">
