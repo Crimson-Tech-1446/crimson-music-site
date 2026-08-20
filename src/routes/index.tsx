@@ -83,6 +83,22 @@ function Home() {
         </p>
       </section>
 
+      {/* Data usage transparency */}
+      <section className="mx-auto max-w-4xl px-4 py-16 text-center">
+        <div className="text-xs uppercase tracking-widest text-primary font-semibold">Your data, explained</div>
+        <h2 className="mt-2 text-4xl font-bold tracking-tight">
+          Why Crimson Music asks for Google Drive access
+        </h2>
+        <p className="mt-4 mx-auto max-w-2xl text-muted-foreground leading-relaxed">
+          Crimson Music offers an optional backup and restore feature. If you choose to enable it, the
+          app requests limited access to Google Drive so it can save a backup of your app data (such as
+          playlists and settings) to your own Drive account, and restore it later if you reinstall the
+          app or switch devices. We only access files created by Crimson Music itself. We never view,
+          modify, or access any other files in your Drive, and this data is never shared with third
+          parties or used for advertising.
+        </p>
+      </section>
+
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="text-center max-w-2xl mx-auto">
